@@ -1,3 +1,4 @@
+
 nav ul li {
     display: inline-block;
     margin: 20px;
@@ -27,6 +28,17 @@ nav ul li a {
 
 article p {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
+    color: rebeccapurple;
+}
+ ol {
+    list-style: upper-alpha;
+    font-size:18px;
+    color:rgb(74, 46, 102);
+}
+ ul {
+    list-style-type:circle;
+    font-size:18px;
+    color:rgb(74, 46, 102);
 }
