@@ -3,43 +3,44 @@
 let username = prompt('Type your name please');
 //console.log(username);
 alert('welcome to our site ' + username + '  My name is salsabil nice to meet you');
-
 let score = 0;
-
 let age = Number(prompt('Can you guess my age ?'));
-if (age == 25) {
-    alert('your are correct, I am 25 years old ');
-    //console.log('your are correct, I am 25 years old ');
-    score++;
-}
-else {
-    alert('That is not right ')
-}
 
-
-
-let language = prompt('Do I speak more than one language ?', 'answer with yes or no plz');
-
-switch (language.toLowerCase()) {
-    case 'yes':
-    case 'y':
-        alert('Good job😉 that is right i could speak three languages');
-        //console.log('Good job😉 that is right i could speak three languages');
+function question1() {
+    if (age == 25) {
+        alert('your are correct, I am 25 years old ');
+        //console.log('your are correct, I am 25 years old ');
         score++;
-        break;
-    case 'no':
-    case 'n':
-        alert('That is okay, you can git it next time. i do speak more than one');
-        //console.log('That is okay, you can git it next time. i do speak more than one');
-        break;
+    }
+    else {
+        alert('That is not right ')
+    }
+}
+question1();
+function question2() {
+
+    let language = prompt('Do I speak more than one language ?', 'answer with yes or no plz');
+
+    switch (language.toLowerCase()) {
+        case 'yes':
+        case 'y':
+            alert('Good job😉 that is right i could speak three languages');
+            //console.log('Good job😉 that is right i could speak three languages');
+            score++;
+            break;
+        case 'no':
+        case 'n':
+            alert('That is okay, you can git it next time. i do speak more than one');
+            //console.log('That is okay, you can git it next time. i do speak more than one');
+            break;
+    }
 }
 
-
-
+question2();
 
 let china = prompt('Do I Think that chinese language is the most hard lang. In the world ?', 'answer with yes or no plz');
 //console.log(china);
-function chinaQ() {
+function question3() {
     if (china.toLocaleLowerCase() == "yes" || china.toLocaleLowerCase() === 'y') {
         alert('your are correct, it\'s hard to learn it. But in time you will love it ');
         score++;
@@ -48,12 +49,14 @@ function chinaQ() {
         alert(' unfortunately, I Do. Because it will take too much time and effort to learn it ');
     }
     //else {
-       // alert('Retype your Answer please  ' + username)
+    // alert('Retype your Answer please  ' + username)
     //}
 }
 
-chinaQ();
 
+question3();
+
+function question4() {
 
 let visit = prompt('Do you think that i visited china ?', 'answer with yes or no plz');
 
@@ -71,7 +74,9 @@ switch (visit.toLowerCase()) {
         break;
 
 }
-
+}
+question4 ();
+function question5 (){
 let City = prompt("Do you know the name of china capital city?", 'answer with yes or no plz');
 switch (City.toLowerCase()) {
     case 'yes':
@@ -87,6 +92,9 @@ switch (City.toLowerCase()) {
         break;
 
 }
+}
+question5();
+function question6() {
 let guess = 1;
 while (guess <= 4) {
     let guessNumber = Number(prompt('let\'s play Guess a number game?' + ' Be carful you only got 4 chances', 'The answer would be between 1-20'));
@@ -107,6 +115,9 @@ while (guess <= 4) {
 }
 alert(" The correct answer was 12");
 //console.log(guessNumber);
+} 
+question6();
+function question7(){
 let food = ['kabsa', 'maqloba', 'fried chicken', 'pizza', "burger"];
 for (let i = 0; i < 6; i++) {
     let foodInput = prompt('let\'s play Guess my favorites food  game?', ' Be carful you only got 6 chances');
@@ -121,7 +132,8 @@ for (let i = 0; i < 6; i++) {
     }
 }
 alert("The correct answer must be one of my favorites food list Kabsa, Maqloba, Fried chicken and pizza");
-
+}
+question7();
 alert('Great Job ' + username + ' and your score is ' + score);
 
 
