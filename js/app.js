@@ -47,9 +47,9 @@ function chinaQ() {
     else if (china.toLocaleLowerCase == "no" || china.toLocaleLowerCase() === 'n') {
         alert(' unfortunately, I Do. Because it will take too much time and effort to learn it ');
     }
-    else {
-        alert('Retype your Answer please  ' + username)
-    }
+    //else {
+       // alert('Retype your Answer please  ' + username)
+    //}
 }
 
 chinaQ();
@@ -107,29 +107,46 @@ while (guess <= 4) {
 }
 alert(" The correct answer was 12");
 //console.log(guessNumber);
-let F = ['kabsa', 'maqloba', 'fried chicken', 'pizza', "burger"];
-let chances = 1;
-while (chances <= 6) {
-    let Food = prompt('let\'s play Guess my favorites food  game?', ' Be carful you only got 6 chances');
-    for (let i = 0; i < F.length; i++) {
-        if (Food == F[i]) {
+let food = ['kabsa', 'maqloba', 'fried chicken', 'pizza', "burger"];
+for (let i = 0; i < 6; i++) {
+    let foodInput = prompt('let\'s play Guess my favorites food  game?', ' Be carful you only got 6 chances');
+    for (let h = 0; h < food.length; h++) {
+        if (foodInput == food[h]) {
 
-            // alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT It was one of This list Kabsa, Maqloba, Fried chicken and pizza ");
+            alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT It was one of my favorites food ");
             score++;
-            chances = 7;
+            i = 7;
             break;
         }
-        else {
-
-
-        }
     }
-    chances++;
-    // alert("That is not on of my favorites food list! try again");
-
 }
-alert("The correct answer was one of my favorites food list Kabsa, Maqloba, Fried chicken and pizza");
-//console.log("end");
+alert("The correct answer must be one of my favorites food list Kabsa, Maqloba, Fried chicken and pizza");
 
 alert('Great Job ' + username + ' and your score is ' + score);
 
+
+
+
+//let F = ['kabsa', 'maqloba', 'fried chicken', 'pizza', "burger"];
+//let chances = 1;
+//while (chances <= 6) {
+//let Food = prompt('let\'s play Guess my favorites food  game?', ' Be carful you only got 6 chances');
+//for (let i = 0; i < F.length; i++) {
+//if (Food == F[i]) {
+
+// alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT It was one of This list Kabsa, Maqloba, Fried chicken and pizza ");
+// score++;
+// chances = 7;
+// break;
+// }
+// else {
+
+
+//}
+//}
+// chances++;
+// alert("That is not on of my favorites food list! try again");
+
+//}
+
+//console.log("end");
