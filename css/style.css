@@ -1,4 +1,11 @@
+* boday {
 
+background-color: rgb(235, 151, 41);
+}
+nav {
+    text-align: center;
+    font-size:18px;
+}
 nav ul li {
     display: inline-block;
     margin: 20px;
@@ -7,7 +14,8 @@ nav ul li {
 h1,h2 {
     text-align: center;
     font-weight: bolder;
-    font-size: 20px;
+    color: hotpink;
+    font-size: 30px;
     margin: 20px;
 }
 
@@ -23,22 +31,39 @@ footer {
 
 nav ul li a {
     text-decoration: none;
-    
+    color: rebeccapurple;
 }
 
 article p {
     text-align: center;
-    font-size: 15px;
-    font-weight: bolder;
+    font-size: 25px;
     color: rebeccapurple;
+    font-family: 'Lobster', cursive;
 }
  ol {
     list-style: upper-alpha;
-    font-size:18px;
+    font-size:25px;
     color:rgb(74, 46, 102);
+    font-family: 'Kirang Haerang', cursive;
 }
- ul {
+article ul li  {
     list-style-type:circle;
-    font-size:18px;
+    font-size:25px;
     color:rgb(74, 46, 102);
+    font-family: 'Kirang Haerang', cursive;
 }
+img {
+    border-radius: 50%;;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+ h3 {
+    font-weight: bolder;
+    color: hotpink;
+    font-size: 25px;
+    margin: 20px;
+    font-family: 'Kirang Haerang', cursive;
+ }
